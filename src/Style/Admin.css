@@ -1,0 +1,114 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Form Container */
+  form {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px; /* Ensure proper spacing between rows */
+  }
+  
+  /* Labels and Inputs */
+  .input-group {
+    display: flex;
+    flex-direction: column; /* Stack label above input */
+    width: 48%; /* Two fields per row */
+    margin-bottom: 20px;
+  }
+  
+  label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #444;
+    text-align: left; /* Align label text to the left */
+  }
+  
+  input[type="text"],
+  input[type="number"],
+  input[type="date"],
+  textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+    width: 100%; /* Ensure inputs take full width */
+    box-sizing: border-box; /* Prevent input from overflowing its container */
+  }
+  
+  input[type="file"] {
+    padding: 5px;
+    width: 100%;
+  }
+  
+  input[type="text"]:focus,
+  input[type="number"]:focus,
+  input[type="date"]:focus,
+  textarea:focus {
+    border-color: #1abc9c;
+    outline: none;
+  }
+  
+  /* Button */
+  button[type="submit"] {
+    background-color: #1abc9c;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #16a085;
+  }
+  
+  /* Image Preview */
+  img {
+    display: block;
+    margin: 20px auto;
+    border-radius: 5px;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Mobile Styles */
+  @media screen and (max-width: 768px) {
+    .input-group {
+      width: 100%; /* Stack inputs on mobile */
+    }
+  
+    form {
+      padding: 15px;
+    }
+  
+    button[type="submit"] {
+      padding: 10px 15px;
+    }
+  
+    img {
+      width: 80%;
+    }
+  }
+  
